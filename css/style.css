@@ -22,13 +22,15 @@ p{
 .navbar-container{
     width: 100%;
     height: 80px;
-    background-color: #3e425f;
+    background-color: #648285;
     padding: 0 2rem;
 }
 
 .logo{
     width: 50px;
     margin-top: 15px;
+    border-radius: 100%;
+
 }
 
 .navbar-items {
@@ -58,17 +60,174 @@ p{
 
 .default-btn{
     padding: 15px 20px;
-    background-color: #2f123caa;
+    background-color: #a3c4c2;
     border-radius: 5px;
     margin-right: 20px;
 }
 
 .navbar-items .default-btn:hover{
-    background-color: #2f123c;
+    background-color: #8ba7a5;
     color: #fff;
     font-size: 18px;
 }
 
-.logo{
-    filter: hue-rotate(200deg); 
+/* main banner */
+.main-banner{
+    padding: 10rem 0;
+    position: relative;
+}
+
+.main-banner::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-image: url("../img/hospital.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: blur(1px) brightness(80%);
+}
+
+.main-banner h1,
+.main-banner p{
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: #000 3px 2px 3px;
+}
+
+.main-banner p{
+    font-size: 54px;
+}
+
+/* services */
+
+.services-container{
+    padding: 5rem 0;
+}
+
+.services-container ul{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.services-container li{
+    flex: 1 1 200px;
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.fas,
+.fa-solid{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.fa-shield{
+    color: #b4a68e;
+}
+
+.fa-rocket{
+    color: #648285;
+}
+
+.fa-hand-holding-heart{
+    color: #d5bf95;
+}
+
+.fa-stethoscope{
+    color: #080d0d;
+}
+
+.services-container h3{
+    margin-bottom: 25px;
+}
+
+.services-container p{
+    line-height: 24px;
+}
+
+/* prices and plans  */
+.pricing-container{
+    padding-bottom: 5rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.pricing-container h2{
+    font-size: 36px;
+}
+
+.pricing-container p{
+    font-size: 20px;
+}
+
+.plans-container{
+    display: flex;
+    justify-content: space-between;
+    width: 50px auto 0;
+    margin-top: 50px;
+}
+
+.plan{
+    flex: 1;
+    max-width: 250px;
+    margin: 0 20px;
+}
+
+.plan ul{
+    padding: 0;
+}
+
+.plan li{
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    background-color: #e8e9ea;
+    color: #333;
+}
+
+.plan .price{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #cdb88f;
+    color: #fff;
+    line-height: 150px;
+    margin: 0 auto -50px;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+}
+
+.plan .plan-name{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    padding: 50px 0;
+    background-color: #b4a68e;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.plan .plan-btn{
+    background-color: #829a98;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 75px;
+    color: #fff;
+    height: 75px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.plan .recommended{
+    background-color: #080d0d;
 }
